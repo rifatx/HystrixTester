@@ -1,0 +1,16 @@
+{
+    "hystrix": {
+      "command": {
+          "default": {
+            "circuitBreaker": {
+              "requestVolumeThreshold": 3
+            },
+            "metrics" : {
+              "rollingStats": {
+                "timeInMilliseconds" : 5000
+              }
+            }
+          }
+        }
+      }
+    }
